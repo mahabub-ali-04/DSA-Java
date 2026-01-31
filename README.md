@@ -29,3 +29,6 @@ Performing binary search.
 
 # Largest and smallest element
 finding largest and smallest elements in array.
+
+# Reverse in array
+reversing array.
