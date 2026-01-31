@@ -17,12 +17,15 @@ for a given set of Strings print the largest String
 for a given String convert each the first letter of each word to uppercase.
 
 # String Compression
-"aaabbcccdd"-> "a3b2c3d2"
+"aaabbcccdd"-> "a3b2c3d2".
 
 # Added Arrays Folder
 
 # linear Search
-performing linear Search
+performing linear Search.
 
 # Binary Search
-Performing binary search
+Performing binary search.
+
+# Largest and smallest element
+finding largest and smallest elements in array.
