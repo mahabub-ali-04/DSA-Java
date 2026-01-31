@@ -15,3 +15,6 @@ for a given set of Strings print the largest String
 
 # To upper Case
 for a given String convert each the first letter of each word to uppercase.
+
+# String Compression
+"aaabbcccdd"-> "a3b2c3d2"
