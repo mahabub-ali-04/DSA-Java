@@ -8,3 +8,7 @@ To check String is palindrome or not?
 
 # shortestpath
 given a route containing four directions(E,W,N,S) find the shortestpath to reach destination.
+
+# Largset String
+for a given set of Strings print the largest String
+"apple" , "mango", "banana".
