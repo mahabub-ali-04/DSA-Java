@@ -12,3 +12,6 @@ given a route containing four directions(E,W,N,S) find the shortestpath to reach
 # Largset String
 for a given set of Strings print the largest String
 "apple" , "mango", "banana".
+
+# To upper Case
+for a given String convert each the first letter of each word to uppercase.
