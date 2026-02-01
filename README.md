@@ -25,6 +25,10 @@ finding largest and smallest elements in array.
 
 reversing array.
 
+pairs in arrays.
+
+print subarrays.
+
 # BitManupulation
 
 check if a number is even or odd?
