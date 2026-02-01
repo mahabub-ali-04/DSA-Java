@@ -32,3 +32,6 @@ finding largest and smallest elements in array.
 
 # Reverse in array
 reversing array.
+
+# BitManupulation
+check if a number is even or odd?
