@@ -21,17 +21,15 @@ for a given String convert each the first letter of each word to uppercase.
 
 # Added Arrays Folder
 
-# linear Search
 performing linear Search.
 
-# Binary Search
+
 Performing binary search.
 
-# Largest and smallest element
 finding largest and smallest elements in array.
 
-# Reverse in array
 reversing array.
 
 # BitManupulation
+
 check if a number is even or odd?
