@@ -51,3 +51,14 @@ half-pyramid
 inverted star
 
 nested star
+
+# Functions
+hello world
+
+sum
+
+product
+
+swap
+
+factorial
