@@ -43,6 +43,8 @@ update ith bit of a number(e.g. n =10 , i = 2 , newBit = 1)
 
 clear last ith bit of a number(e.g. n =10 , i = 2)
 
+clear range of bits of a number(e.g. n =10 , i = 2 , j = 4)
+
 # patterns
 character patterns
 
