@@ -34,3 +34,5 @@ print subarrays.
 check if a number is even or odd?
 
 get ith bit of a numbber (e.g. n= 10 , i =2 )
+
+set ith bit of a number(e.g. n =10 , i = 2)
