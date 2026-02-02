@@ -42,3 +42,12 @@ clear ith bit of a number(e.g. n = 10 , i = 3)
 update ith bit of a number(e.g. n =10 , i = 2 , newBit = 1)
 
 clear last ith bit of a number(e.g. n =10 , i = 2)
+
+# patterns
+character patterns
+
+half-pyramid
+
+inverted star
+
+nested star
