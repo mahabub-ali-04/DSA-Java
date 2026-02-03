@@ -72,3 +72,13 @@ product
 swap
 
 factorial
+
+Binomial coefficient
+
+check if a number is prime or not?
+
+primes in range
+
+binary to ddecimal
+
+decimal to binary
