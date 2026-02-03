@@ -45,6 +45,14 @@ clear last ith bit of a number(e.g. n =10 , i = 2)
 
 clear range of bits of a number(e.g. n =10 , i = 2 , j = 4)
 
+check if a number is power of 2 or not?
+
+count set bits in a number(means how many times 1 is occured)
+
+fast exponentiation
+
+
+
 # patterns
 character patterns
 
