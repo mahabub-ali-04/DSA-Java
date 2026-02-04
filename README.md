@@ -62,6 +62,20 @@ inverted star
 
 nested star
 
+# advance patterns
+hollow ractangle pattern
+
+butterfyl pattern
+
+0-1 triangle
+
+inverted half pyramid with number
+
+floyds triangle
+
+inverted and rotated half pyramid
+
+
 # Functions
 hello world
 
