@@ -11,7 +11,6 @@ public class Kadanes {
             if (currSum < 0) {
                 currSum = 0;
             }
-            // compare
 
         }
         System.out.println("max subarray sum is: " + maxSum);
