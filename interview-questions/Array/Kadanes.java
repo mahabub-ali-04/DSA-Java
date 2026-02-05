@@ -7,11 +7,12 @@ public class Kadanes {
         for (int i = 0; i < arr.length; i++) {
             // calculate sum
             currSum += arr[i];
+            maxSum = Math.max(maxSum, currSum);
             if (currSum < 0) {
                 currSum = 0;
             }
             // compare
-            maxSum = Math.max(maxSum, currSum);
+
         }
         System.out.println("max subarray sum is: " + maxSum);
     }
