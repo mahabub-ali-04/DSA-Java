@@ -1,0 +1,33 @@
+public class MajorityElement {
+    public static int majorityElement(int nums[]) {
+        int n = nums.length;
+        int freq = 0;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            if (freq == 0) {
+                ans = nums[i];
+            }
+            if (ans == nums[i]) {
+                freq++;
+            } else {
+                freq--;
+            }
+        }
+        freq = 0;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == ans) {
+                freq++;
+            }
+        }
+        if (freq > n / 2) {
+            return ans;
+        }
+        return -1;
+    }
+
+    public static void main(String args[]) {
+        int nums[] = { 2, 3, 4, 2, 2 };
+        System.out.println(majorityElement(nums));
+    }
+
+}
