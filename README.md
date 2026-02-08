@@ -3,7 +3,6 @@ Dedicated to building strong DSA concepts and logical problem-solving skills usi
 
 # Added String Folder
 
-
 To check String is palindrome or not?
 
 given a route containing four directions(E,W,N,S) find the shortestpath to reach destination.
@@ -29,6 +28,12 @@ pairs in arrays.
 
 print subarrays.
 
+# 2D array
+
+creation of Array
+
+search in array
+
 # BitManupulation
 
 check if a number is even or odd?
@@ -50,8 +55,6 @@ check if a number is power of 2 or not?
 count set bits in a number(means how many times 1 is occured)
 
 fast exponentiation
-
-
 
 # patterns
 character patterns
