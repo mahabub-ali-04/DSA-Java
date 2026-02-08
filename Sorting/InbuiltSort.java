@@ -1,7 +1,7 @@
 import java.util.Collections;
 import java.util.Arrays;
 
-public class InbuildSort {
+public class InbuiltSort {
     public static void inbuiltSort(Integer nums[]) {
         for (Integer i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + " ");
