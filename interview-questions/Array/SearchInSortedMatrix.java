@@ -2,7 +2,7 @@ public class SearchInSortedMatrix {
 
     public static boolean searchInSortedMatrix(int matrix[][], int key) {
         int row = 0;
-        int col = matrix.length - 1;
+        int col = matrix[0].length - 1;
 
         while (row < matrix.length && col >= 0) {
             if (matrix[row][col] == key) {
