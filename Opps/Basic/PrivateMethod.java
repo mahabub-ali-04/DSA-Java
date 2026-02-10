@@ -1,4 +1,4 @@
-package Opps;
+
 
 public class PrivateMethod {
     public static void main(String args[]) {
