@@ -38,6 +38,8 @@ spiral matrix
 
 diagonal sum
 
+search in sorted matrix
+
 # BitManupulation
 
 check if a number is even or odd?
