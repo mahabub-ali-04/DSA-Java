@@ -1,6 +1,9 @@
 public class DiagonalSum {
     public static int diagonalSum(int matrix[][]) {
         int sum = 0;
+
+        // Brute force
+
         // for(int i =0; i<matrix.length; i++){
         // for(int j =0; j<matrix.length; j++){
         // if(i == j){
@@ -12,6 +15,7 @@ public class DiagonalSum {
         // }
         // }
         // }
+
         // optimized- O(n)
         for (int i = 0; i < matrix.length; i++) {
             // primary diagonal sum

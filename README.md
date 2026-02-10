@@ -34,6 +34,10 @@ creation of Array
 
 search in array
 
+spiral matrix
+
+diagonal sum
+
 # BitManupulation
 
 check if a number is even or odd?
