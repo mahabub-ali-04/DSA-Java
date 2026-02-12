@@ -1,0 +1,26 @@
+package Basic;
+
+import java.util.*;
+
+public class Prime {
+    public static boolean isPrime(int n) {
+        if (n == 0) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % 1 == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter n:");
+        int n = sc.nextInt();
+        System.out.println(isPrime(n));
+    }
+
+}
