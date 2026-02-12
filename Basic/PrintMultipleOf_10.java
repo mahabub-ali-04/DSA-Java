@@ -1,7 +1,7 @@
 package Basic;
 
 import java.util.*;
-
+// keep entering number untill user enter multiple of 10
 public class PrintMultipleOf_10 {
     public static void main(String args[]) {
         while (true) {
