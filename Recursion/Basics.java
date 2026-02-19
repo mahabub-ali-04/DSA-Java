@@ -52,13 +52,26 @@ public class Basics {
         return fn;
     }
 
+    // check if a array is sorted or not
+    public static boolean isSorted(int arr[], int i) {
+        if (i == arr.length - 1) { // base case
+            return true;
+        }
+        if (arr[i] > arr[i + 1]) {
+            return false;
+        }
+        return isSorted(arr, i + 1);
+    }
+
     public static void main(String args[]) {
         int n = 5;
+        int arr[] = { 1, 2, 3, 4, 5 };
         // printDec(n);
         // printIncreasing(n);
         // System.out.println(factorial(n));
         // System.out.println(sumNaturalNum(n));
-        System.out.println(fib(n));
+        // System.out.println(fib(n));
+        System.out.println(isSorted(arr, 0));
     }
 
 }
