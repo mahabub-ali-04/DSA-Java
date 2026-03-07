@@ -63,6 +63,17 @@ public class Basics {
         return isSorted(arr, i + 1);
     }
 
+    // WAF to find the first occurence of an element in an array
+    public static int firstOccurence(int arr[], int key, int i) {
+        if (i == arr.length) {
+            return -1;
+        }
+        if (arr[i] == key) {
+            return i;
+        }
+        return firstOccurence(arr, key, i + 1);
+    }
+
     public static void main(String args[]) {
         int n = 5;
         int arr[] = { 1, 2, 3, 4, 5 };
@@ -71,7 +82,8 @@ public class Basics {
         // System.out.println(factorial(n));
         // System.out.println(sumNaturalNum(n));
         // System.out.println(fib(n));
-        System.out.println(isSorted(arr, 0));
+        // System.out.println(isSorted(arr, 0));
+        System.out.println(firstOccurence(arr, 5, 0));
     }
 
 }
