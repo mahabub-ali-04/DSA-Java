@@ -87,14 +87,29 @@ public class Basics {
     }
 
     // WAF to print x to the power n
-    public static int power(int x, int n){
-        if(n == 0){
+    public static int power(int x, int n) {
+        if (n == 0) {
             return 1;
         }
         // int xnm1 = power(x, n-1);
         // int xn = x * xnm1;
         // return xn;
-        return x * power(x, n-1);
+        return x * power(x, n - 1);
+    }
+
+    // optimized power
+
+    public static int optimizedPower(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int halfPower = power(x, n / 2);
+        int halfPowerSqr = halfPower * halfPower;
+        // if odd 
+        if (n % 2 != 0) {
+            halfPowerSqr = x * halfPowerSqr;
+        }
+        return halfPowerSqr;
     }
 
     public static void main(String args[]) {
@@ -108,7 +123,8 @@ public class Basics {
         // System.out.println(isSorted(arr, 0));
         // System.out.println(firstOccurence(arr, 5, 0));
         // System.out.println(lastOccurence(arr, 5, 0));
-        System.out.println(power(2, 10));
+        // System.out.println(power(2, 10));
+        System.out.println(optimizedPower(2, 5));
     }
 
 }
