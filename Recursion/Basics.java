@@ -86,6 +86,17 @@ public class Basics {
         return isFound;
     }
 
+    // WAF to print x to the power n
+    public static int power(int x, int n){
+        if(n == 0){
+            return 1;
+        }
+        // int xnm1 = power(x, n-1);
+        // int xn = x * xnm1;
+        // return xn;
+        return x * power(x, n-1);
+    }
+
     public static void main(String args[]) {
         int n = 5;
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 5 };
@@ -96,7 +107,8 @@ public class Basics {
         // System.out.println(fib(n));
         // System.out.println(isSorted(arr, 0));
         // System.out.println(firstOccurence(arr, 5, 0));
-        System.out.println(lastOccurence(arr, 5, 0));
+        // System.out.println(lastOccurence(arr, 5, 0));
+        System.out.println(power(2, 10));
     }
 
 }
