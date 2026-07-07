@@ -16,8 +16,10 @@ public class PrimeOrNot {
         return true;
     }
 
+    
+
     public static void main(String args[]) {
-        System.out.println(isPrime(1));
+        System.out.println(primesInRange(100));
     }
 
 }
