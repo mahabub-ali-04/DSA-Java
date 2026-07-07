@@ -2,6 +2,9 @@ package Functions;
 
 public class PrimeOrNot {
     public static boolean isPrime(int n) {
+        if (n <= 1) {
+            return false;
+        }
         if (n == 2) {
             return true;
         }
@@ -14,7 +17,7 @@ public class PrimeOrNot {
     }
 
     public static void main(String args[]) {
-        System.out.println(isPrime(6));
+        System.out.println(isPrime(1));
     }
 
 }
