@@ -2,9 +2,9 @@ package Sorting;
 
 public class SelectionSort {
     public static void selectionsort(int numbers[]) {
-        for (int i = 0; i < numbers.length - 1; i++) {
+        for (int i = 0; i < numbers.length - 1; i++) { // passes n-1
             int minPos = i;
-            for (int j = i + 1; j < numbers.length; j++) {
+            for (int j = i + 1; j < numbers.length; j++) { //comparision 
                 if (numbers[minPos] > numbers[j]) {
                     minPos = j;
                 }
