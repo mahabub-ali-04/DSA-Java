@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Java compiled files
+*.class
+
+# Separate Git repository
+Array-Problem/# macOS
+.DS_Store
+
+# Java compiled files
+*.class
