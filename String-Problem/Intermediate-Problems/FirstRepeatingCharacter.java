@@ -1,0 +1,29 @@
+public class FirstRepeatingCharacter {
+    public static int countCharacterFrequency(String str, char ch) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char currChar = str.charAt(i);
+            if (currChar == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static String firstRepeatingCharacter(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            int frequency = countCharacterFrequency(str, ch);
+            if (frequency > 1) {
+                return String.valueOf(ch);
+            }
+        }
+        return "No Repeating Character Found";
+    }
+
+    public static void main(String args[]) {
+        String str = "aabbcdd";
+        System.out.println(firstRepeatingCharacter(str));
+    }
+    
+}
