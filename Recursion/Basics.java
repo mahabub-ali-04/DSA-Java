@@ -105,11 +105,27 @@ public class Basics {
         }
         int halfPower = power(x, n / 2);
         int halfPowerSqr = halfPower * halfPower;
-        // if odd 
+        // if odd
         if (n % 2 != 0) {
             halfPowerSqr = x * halfPowerSqr;
         }
         return halfPowerSqr;
+    }
+
+    // Tilling Problem
+
+    public static int tillingproblem(int n) { // 2 * n
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        // Choice
+        // Vertical
+        int fnm1 = tillingproblem(n - 1);
+
+        // Horizontal
+        int fnm2 = tillingproblem(n - 2);
+        int totWays = fnm1 + fnm2;
+        return totWays;
     }
 
     public static void main(String args[]) {
@@ -124,7 +140,8 @@ public class Basics {
         // System.out.println(firstOccurence(arr, 5, 0));
         // System.out.println(lastOccurence(arr, 5, 0));
         // System.out.println(power(2, 10));
-        System.out.println(optimizedPower(2, 5));
+        // System.out.println(optimizedPower(2, 5));
+        System.out.println(tillingproblem(4));
     }
 
 }
