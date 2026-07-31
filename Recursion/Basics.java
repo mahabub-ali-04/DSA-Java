@@ -147,6 +147,21 @@ public class Basics {
 
     }
 
+    // Friends Pairing Problem
+    public static int friendsPairingProblem(int n) {
+        // Base Case
+        if (n == 1 || n == 2) {
+            return n;
+        }
+        // Choice
+        // Single
+        // int fnm1 = friendsPairingProblem(n - 1);
+        // pairing
+        // int fnm2 = (n - 1) * friendsPairingProblem(n - 2);
+        // int totWays = fnm1 + fnm2;
+        return friendsPairingProblem(n - 1) + (n - 1) * friendsPairingProblem(n - 2);
+    }
+
     public static void main(String args[]) {
         int n = 5;
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 5 };
@@ -162,7 +177,8 @@ public class Basics {
         // System.out.println(power(2, 10));
         // System.out.println(optimizedPower(2, 5));
         // System.out.println(tillingproblem(4));
-        removeDuplicates(str, new StringBuilder(""), 0, new boolean[26]);
+        // removeDuplicates(str, new StringBuilder(""), 0, new boolean[26]);
+        System.out.println(friendsPairingProblem(2));
     }
 
 }
