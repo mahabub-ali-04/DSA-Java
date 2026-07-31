@@ -128,9 +128,29 @@ public class Basics {
         return totWays;
     }
 
+    // Remove Duplicates
+    public static void removeDuplicates(String str, StringBuilder newStr, int idx, boolean map[]) {
+        // Base Case
+        if (idx == str.length()) {
+            System.out.println(newStr);
+            return;
+        }
+        // Kaam
+        char currChar = str.charAt(idx);
+        if (map[currChar - 'a'] == true) {
+            // Duplicates
+            removeDuplicates(str, newStr, idx + 1, map);
+        } else {
+            map[currChar - 'a'] = true;
+            removeDuplicates(str, newStr.append(currChar), idx + 1, map);
+        }
+
+    }
+
     public static void main(String args[]) {
         int n = 5;
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 5 };
+        String str = "programming";
         // printDec(n);
         // printIncreasing(n);
         // System.out.println(factorial(n));
@@ -141,7 +161,8 @@ public class Basics {
         // System.out.println(lastOccurence(arr, 5, 0));
         // System.out.println(power(2, 10));
         // System.out.println(optimizedPower(2, 5));
-        System.out.println(tillingproblem(4));
+        // System.out.println(tillingproblem(4));
+        removeDuplicates(str, new StringBuilder(""), 0, new boolean[26]);
     }
 
 }
