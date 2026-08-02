@@ -9,21 +9,27 @@ public class Operations {
         numbers.add(30);
         numbers.add(40);
 
-        numbers.add(0,5);
-        System.out.println(numbers);
-        //Get Element
+        // numbers.add(0, 5);
+        // System.out.println(numbers);
+        // Get Element
         // System.out.println(numbers.get(2));
 
         // Remove Element
         // numbers.remove(2);
         // System.out.println(numbers);
 
-        //Set Element
+        // Set Element
         // numbers.set(2,50);
         // System.out.println(numbers);
 
-        //Contains Element
+        // Contains Element
         // System.out.println(numbers.contains(40));
+
+        // Size()
+
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.print(numbers.get(i) + " ");
+        }
     }
 
 }
