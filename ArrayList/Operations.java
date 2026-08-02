@@ -9,6 +9,7 @@ public class Operations {
         numbers.add(30);
         numbers.add(40);
 
+        numbers.add(0,5);
         System.out.println(numbers);
         //Get Element
         // System.out.println(numbers.get(2));
@@ -22,8 +23,7 @@ public class Operations {
         // System.out.println(numbers);
 
         //Contains Element
-
-        System.out.println(numbers.contains(40));
+        // System.out.println(numbers.contains(40));
     }
 
 }
