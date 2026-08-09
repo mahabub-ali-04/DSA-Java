@@ -233,6 +233,20 @@ public class LinkedList {
 
     }
 
+    // Detects a loop/Cycle in a LL
+    public static boolean isCycle() {// Floyd's CFA
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;// +1
+            fast = fast.next.next;// +2
+            if (slow == fast) {
+                return true; // Cycle exists
+            }
+        }
+        return false;// Cycle doesn't exists
+    }
+
     public static void main(String args[]) {
         LinkedList ll = new LinkedList();
         // ll.print();
@@ -260,12 +274,19 @@ public class LinkedList {
         // ll.print();
         // ll.deleteNthFromEnd(3);
         // ll.print();
-        ll.addLast(1);
-        ll.addLast(2);
-        ll.addLast(2);
         // ll.addLast(1);
-        ll.print();
-        System.out.println(ll.checkPalindrome());
+        // ll.addLast(2);
+        // ll.addLast(2);
+        // ll.addLast(1);
+        // ll.print();
+        // System.out.println(ll.checkPalindrome());
+
+        head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next = head;
+        // 1->2->3->1
+        System.out.println(isCycle());
     }
 
 }
